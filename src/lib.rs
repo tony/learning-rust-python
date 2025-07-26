@@ -6,7 +6,7 @@ pub fn add(left: u64, right: u64) -> u64 {
 }
 
 #[pymodule]
-fn learning_rust(_py: Python, m: &PyModule) -> PyResult<()> {
+fn learning_rust(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(add, m)?)?;
     Ok(())
 }
