@@ -1,0 +1,25 @@
+# Clippy configuration for Rust 2024 edition
+msrv = "1.89.0"
+
+# Warn on common issues
+warn-on-all-wildcard-imports = true
+allow-expect-in-tests = true
+allow-unwrap-in-tests = true
+allow-dbg-in-tests = true
+allow-print-in-tests = true
+
+# Set maximum values for complexity metrics
+cognitive-complexity-threshold = 30
+too-many-lines-threshold = 100
+too-many-arguments-threshold = 7
+type-complexity-threshold = 250
+single-char-binding-names-threshold = 4
+
+# Documentation
+missing-docs-in-crate-items = true
+
+# Pedantic lints that are useful
+doc-valid-idents = ["PyO3", "Rust", "Python", "PyModule", "PyResult", "PyFunction"]
+
+# Allow certain patterns common in PyO3 projects
+allowed-duplicate-crates = ["pyo3", "pyo3-ffi"]
