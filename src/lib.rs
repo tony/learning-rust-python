@@ -1,6 +1,9 @@
-use pyo3::prelude::*;
+use pyo3::prelude::{
+    Bound, PyModule, PyModuleMethods, PyResult, pyfunction, pymodule, wrap_pyfunction,
+};
 
 #[pyfunction]
+#[must_use]
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
