@@ -3,6 +3,7 @@
 name = "learning-rust-python"
 version = "0.1.0"
 description = "A Rust library for Python using Maturin and PyO3"
+requires-python = ">=3.9"
 authors = [
   {name = "Tony Narlock", email = "tony@git-pull.com"}
 ]
